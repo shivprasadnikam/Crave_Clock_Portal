@@ -40,8 +40,12 @@ public class LoginServiceImpl implements LoginService {
                         .body(loginResponse);
             }
             RcUserDetailsEntity rcUserDetailsEntity = new RcUserDetailsEntity();
+            String userId=rcUserDetailsRepository.getUserIdSeq();
+            log.info("User Id :: {}",userId);
             rcUserDetailsEntity.setUsername(loginRequest.getEmail());
             rcUserDetailsEntity.setPassword(jwtAuthFilter.passwordEncoder().encode(loginRequest.getPassword()));
+            rcUserDetailsEntity.setUserId(userId);
+
             rcUserDetailsRepository.save(rcUserDetailsEntity);
         } catch (Exception e) {
             loginResponse.setStatus(false);
@@ -78,6 +82,7 @@ public class LoginServiceImpl implements LoginService {
         loginResponse.setStatus(true);
         loginResponse.setErrorMessage("User Logged In Successfully");
         loginResponse.setToken(authToken);
+        loginResponse.setUserId(rcUserDetailsRepository.getUserIdByUserName(loginRequest.getEmail()));
         return ResponseEntity.status(HttpStatus.OK).body(loginResponse);
 
     }
