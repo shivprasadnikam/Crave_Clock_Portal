@@ -28,8 +28,10 @@ public class OrderServiceImpl implements OrderService {
     @Override
     @Transactional
     public OrderPlacedResponseDTO processOrder(OrderRequestDTO dto) {
+        log.info("[OrderServiceImpl] processOrder called for userId={}, itemsCount={}", dto.getUserId(),
+                dto.getItems() != null ? dto.getItems().size() : 0);
         OrderPlacedResponseDTO orderPlacedResponseDTO = new OrderPlacedResponseDTO();
-        Long currentOrderId=orderItemRepository.getOrderItemId();
+        Long currentOrderId = orderItemRepository.getOrderItemId();
         // 1. Create and save Order entity
         OrderEntity order = new OrderEntity();
         order.setUserId(dto.getUserId());
@@ -42,7 +44,7 @@ public class OrderServiceImpl implements OrderService {
         order.setUpdatedAt(LocalDateTime.now());
 
         orderRepository.save(order);
-        log.info("Data saved into CC_ORDER");
+        log.info("[OrderServiceImpl] Order entity saved: orderId={}", currentOrderId);
 
         // 2. Save Order Items
         for (OrderItemDTO item : dto.getItems()) {
@@ -54,14 +56,18 @@ public class OrderServiceImpl implements OrderService {
             orderItem.setTotalPrice(item.getPrice().multiply(BigDecimal.valueOf(item.getQuantity())));
 
             orderItemRepository.save(orderItem);
+            log.info("[OrderServiceImpl] OrderItem entity saved: orderItemId={}, menuId={}", currentOrderId,
+                    item.getMenuId());
         }
         orderPlacedResponseDTO.setOrderId(OrderUtility.generateOrderId());
-        log.info("Data saved into CC_ORDER_ITEMS");
+        log.info("[OrderServiceImpl] processOrder completed: generatedOrderId={}", orderPlacedResponseDTO.getOrderId());
         return orderPlacedResponseDTO;
     }
 
     public List<OrderEntity> getOrdersByUserId(Long userId) {
-        return orderRepository.findByUserIdOrderByOrderDateDesc(userId);
+        log.info("[OrderServiceImpl] getOrdersByUserId called for userId={}", userId);
+        List<OrderEntity> orders = orderRepository.findByUserIdOrderByOrderDateDesc(userId);
+        log.info("[OrderServiceImpl] getOrdersByUserId result: {} orders", orders.size());
+        return orders;
     }
 }
-

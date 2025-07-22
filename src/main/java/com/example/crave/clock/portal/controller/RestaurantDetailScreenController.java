@@ -15,10 +15,11 @@ public class RestaurantDetailScreenController {
 
     private final VendorService vendorService;
 
-
     @GetMapping("api/restaurants")
     public List<VendorDTO> getAllVendors() {
-        log.info("Vendor controller called");
-        return vendorService.getAllVendors();
+        log.info("[RestaurantDetailScreenController] getAllVendors called");
+        List<VendorDTO> vendors = vendorService.getAllVendors();
+        log.info("[RestaurantDetailScreenController] getAllVendors result: {} vendors", vendors.size());
+        return vendors;
     }
 }

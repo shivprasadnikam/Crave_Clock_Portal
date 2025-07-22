@@ -12,6 +12,8 @@ import java.util.Optional;
 public interface RcUserDetailsRepository extends JpaRepository<RcUserDetailsEntity,Long> {
     @Query(value = "SELECT CC_USER_ID_SEQ.NEXTVAL FROM DUAL", nativeQuery = true)
     String getUserIdSeq();
+    @Query(value = "SELECT CC_USER_ID_SEQ.NEXTVAL FROM DUAL", nativeQuery = true)
+    String getCartItemId();
 
     Optional<RcUserDetailsEntity> findByUsername(String userName);
 

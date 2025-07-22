@@ -12,7 +12,8 @@ import java.time.LocalDateTime;
 public class CartItemEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cart_item_seq_gen")
+    @SequenceGenerator(name = "cart_item_seq_gen", sequenceName = "SEQ_CART_ITEM_ID", allocationSize = 1)
     @Column(name = "CART_ITEM_ID")
     private Long cartItemId;
 
@@ -39,6 +40,5 @@ public class CartItemEntity {
 
     @Column(name = "UPDATED_AT")
     private LocalDateTime updatedAt;
-
 
 }

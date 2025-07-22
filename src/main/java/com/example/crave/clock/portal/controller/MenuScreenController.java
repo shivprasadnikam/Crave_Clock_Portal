@@ -16,11 +16,11 @@ public class MenuScreenController {
 
     private final MenuItemService menuItemService;
 
-
-
     @GetMapping("/{restaurantId}/menu")
     public List<MenuItemDTO> getMenuByRestaurant(@PathVariable String restaurantId) {
-        log.info("Menu Controller called");
-        return menuItemService.getMenuByVendor(Long.valueOf(restaurantId));
+        log.info("[MenuScreenController] getMenuByRestaurant called for restaurantId={}", restaurantId);
+        List<MenuItemDTO> menu = menuItemService.getMenuByVendor(Long.valueOf(restaurantId));
+        log.info("[MenuScreenController] getMenuByRestaurant result: {} items", menu.size());
+        return menu;
     }
 }

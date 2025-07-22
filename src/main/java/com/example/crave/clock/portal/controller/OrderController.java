@@ -18,23 +18,25 @@ import java.util.List;
 public class OrderController {
     private final OrderService orderService;
 
-
     @PostMapping("/api/orders")
     public OrderPlacedResponseDTO placeOrder(@RequestBody OrderRequestDTO orderRequest) {
+        log.info("[OrderController] placeOrder called for userId={}, itemsCount={}", orderRequest.getUserId(),
+                orderRequest.getItems() != null ? orderRequest.getItems().size() : 0);
         try {
-            log.info("Order Created");
             OrderPlacedResponseDTO orderPlacedResponseDTO = orderService.processOrder(orderRequest);
+            log.info("[OrderController] placeOrder result: orderId={}", orderPlacedResponseDTO.getOrderId());
             return orderPlacedResponseDTO;
         } catch (Exception e) {
-            log.error(e.getMessage());
+            log.error("[OrderController] placeOrder error: {}", e.getMessage(), e);
         }
         return new OrderPlacedResponseDTO();
     }
+
     @GetMapping("/api/orders/user/{userId}")
     public ResponseEntity<List<OrderEntity>> getOrderHistory(@PathVariable Long userId) {
-        log.info("Order History Called");
+        log.info("[OrderController] getOrderHistory called for userId={}", userId);
         List<OrderEntity> orders = orderService.getOrdersByUserId(userId);
+        log.info("[OrderController] getOrderHistory result: {} orders", orders.size());
         return ResponseEntity.ok(orders);
     }
 }
-
