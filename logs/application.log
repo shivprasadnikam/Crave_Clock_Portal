@@ -1040,3 +1040,699 @@
 2025-07-23T22:57:34.628+05:30  INFO 6572 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-07-23T22:57:34.633+05:30  INFO 6572 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-07-23T22:57:34.644+05:30  INFO 6572 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-23T23:01:10.762+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] c.e.c.c.p.CraveClockPortalApplication    : Starting CraveClockPortalApplication using Java 17.0.10 with PID 26476 (C:\Projects\Crave_Clock_Portal\target\classes started by shiv in C:\Projects\Crave_Clock_Portal)
+2025-07-23T23:01:10.766+05:30 DEBUG 26476 --- [Crave_Clock_Portal] [main] c.e.c.c.p.CraveClockPortalApplication    : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-23T23:01:10.768+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] c.e.c.c.p.CraveClockPortalApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-23T23:01:12.039+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-23T23:01:12.196+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 6 JPA repository interfaces.
+2025-07-23T23:01:13.206+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-07-23T23:01:13.219+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23T23:01:13.219+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-23T23:01:13.292+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23T23:01:13.292+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2416 ms
+2025-07-23T23:01:13.664+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-23T23:01:13.772+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-23T23:01:13.846+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-23T23:01:14.274+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-23T23:01:14.310+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23T23:01:14.717+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@12f51a65
+2025-07-23T23:01:14.719+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23T23:01:14.841+05:30  WARN 26476 --- [Crave_Clock_Portal] [main] org.hibernate.dialect.Dialect            : HHH000511: The 10.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-07-23T23:01:15.191+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-23T23:01:16.215+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-23T23:01:16.357+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23T23:01:16.686+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-23T23:01:16.802+05:30 DEBUG 26476 --- [Crave_Clock_Portal] [main] c.e.c.c.portal.filters.JwtAuthFilter     : Filter 'jwtAuthFilter' configured for use
+2025-07-23T23:01:17.052+05:30  WARN 26476 --- [Crave_Clock_Portal] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-23T23:01:17.359+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-07-23T23:01:17.756+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-07-23T23:01:17.768+05:30  INFO 26476 --- [Crave_Clock_Portal] [main] c.e.c.c.p.CraveClockPortalApplication    : Started CraveClockPortalApplication in 7.831 seconds (process running for 8.328)
+2025-07-23T23:04:06.271+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-23T23:04:06.271+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-23T23:04:06.273+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-23T23:04:06.326+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:04:06.326+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:04:06.534+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:04:06.535+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:04:08.377+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.ProfileController   : [API REQUEST] GET /api/profile/5 - Fetching user profile
+2025-07-23T23:04:08.394+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.ProfileController   : [API RESPONSE] GET /api/profile/5 - User profile fetched successfully
+2025-07-23T23:04:10.077+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:04:10.077+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:04:10.085+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:04:10.086+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:04:10.135+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:04:10.135+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:04:10.135+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:04:10.135+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:04:15.320+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:04:15.320+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:04:15.354+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 1 cart items for userId=5
+2025-07-23T23:04:15.355+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:04:17.578+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:04:17.579+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=2
+2025-07-23T23:04:17.579+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:04:17.580+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=2
+2025-07-23T23:04:17.586+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:04:17.587+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:04:17.591+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:04:17.591+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:04:17.592+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 0 items
+2025-07-23T23:04:17.594+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 0 items
+2025-07-23T23:04:17.595+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:04:17.596+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:04:19.253+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:04:19.253+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:04:19.253+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:04:19.253+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:04:19.253+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:04:19.253+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:04:19.256+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:04:19.256+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:04:19.256+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:04:19.256+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:04:19.256+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:04:19.258+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:04:20.064+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:04:20.064+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:04:20.085+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=14
+2025-07-23T23:04:20.085+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=14
+2025-07-23T23:04:20.111+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:04:20.112+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:04:20.114+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:04:20.114+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:04:21.759+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=2, quantity=1
+2025-07-23T23:04:21.759+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=2, quantity=1
+2025-07-23T23:04:21.765+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=15
+2025-07-23T23:04:21.765+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=15
+2025-07-23T23:04:21.782+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:04:21.783+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:04:21.788+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 2 cart items for userId=5
+2025-07-23T23:04:21.789+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 2 items
+2025-07-23T23:04:40.355+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory called for userId=5
+2025-07-23T23:04:40.357+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId called for userId=5
+2025-07-23T23:04:40.375+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId result: 6 orders
+2025-07-23T23:04:40.382+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory result: 6 orders
+2025-07-23T23:04:41.462+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory called for userId=5
+2025-07-23T23:04:41.462+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId called for userId=5
+2025-07-23T23:04:41.467+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId result: 6 orders
+2025-07-23T23:04:41.467+05:30  INFO 26476 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory result: 6 orders
+2025-07-23T23:05:12.271+05:30  INFO 26476 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-23T23:05:12.401+05:30  INFO 26476 --- [Crave_Clock_Portal] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-23T23:05:12.406+05:30  INFO 26476 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23T23:05:12.408+05:30  INFO 26476 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23T23:05:12.415+05:30  INFO 26476 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-23T23:05:54.160+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] c.e.c.c.p.CraveClockPortalApplication    : Starting CraveClockPortalApplication using Java 17.0.10 with PID 19480 (C:\Projects\Crave_Clock_Portal\target\classes started by shiv in C:\Projects\Crave_Clock_Portal)
+2025-07-23T23:05:54.162+05:30 DEBUG 19480 --- [Crave_Clock_Portal] [main] c.e.c.c.p.CraveClockPortalApplication    : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-23T23:05:54.163+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] c.e.c.c.p.CraveClockPortalApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-23T23:05:55.414+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-23T23:05:55.541+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 6 JPA repository interfaces.
+2025-07-23T23:05:56.493+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-07-23T23:05:56.505+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23T23:05:56.506+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-23T23:05:56.578+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23T23:05:56.579+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2322 ms
+2025-07-23T23:05:56.911+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-23T23:05:56.990+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-23T23:05:57.050+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-23T23:05:57.485+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-23T23:05:57.546+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23T23:05:58.005+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7c421952
+2025-07-23T23:05:58.008+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23T23:05:58.188+05:30  WARN 19480 --- [Crave_Clock_Portal] [main] org.hibernate.dialect.Dialect            : HHH000511: The 10.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-07-23T23:05:58.499+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-23T23:05:59.522+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-23T23:05:59.663+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23T23:06:00.043+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-23T23:06:00.191+05:30 DEBUG 19480 --- [Crave_Clock_Portal] [main] c.e.c.c.portal.filters.JwtAuthFilter     : Filter 'jwtAuthFilter' configured for use
+2025-07-23T23:06:00.490+05:30  WARN 19480 --- [Crave_Clock_Portal] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-23T23:06:00.825+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-07-23T23:06:01.278+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-07-23T23:06:01.290+05:30  INFO 19480 --- [Crave_Clock_Portal] [main] c.e.c.c.p.CraveClockPortalApplication    : Started CraveClockPortalApplication in 7.917 seconds (process running for 8.397)
+2025-07-23T23:06:49.730+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-23T23:06:49.730+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-23T23:06:49.732+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-23T23:06:49.789+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:06:49.789+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:06:50.015+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:06:50.015+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:06:51.922+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:06:51.922+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:06:51.922+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:06:51.922+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:06:51.977+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 2 cart items for userId=5
+2025-07-23T23:06:51.977+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 2 cart items for userId=5
+2025-07-23T23:06:51.977+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 2 items
+2025-07-23T23:06:51.977+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 2 items
+2025-07-23T23:06:58.900+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:06:58.900+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:06:58.937+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 2 cart items for userId=5
+2025-07-23T23:06:58.937+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:07:03.875+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:07:03.876+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:07:03.879+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:07:03.879+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:07:03.881+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:07:03.881+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:07:03.884+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:07:03.884+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:07:03.885+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:07:03.887+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:07:03.887+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:07:03.887+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:07:05.617+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:07:05.617+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:07:05.637+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=16
+2025-07-23T23:07:05.637+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=16
+2025-07-23T23:07:05.663+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:07:05.664+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:07:05.667+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:07:05.668+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:10:14.436+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.ProfileController   : [API REQUEST] GET /api/profile/5 - Fetching user profile
+2025-07-23T23:10:14.454+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.ProfileController   : [API RESPONSE] GET /api/profile/5 - User profile fetched successfully
+2025-07-23T23:10:15.438+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory called for userId=5
+2025-07-23T23:10:15.438+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId called for userId=5
+2025-07-23T23:10:15.446+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId result: 6 orders
+2025-07-23T23:10:15.447+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory result: 6 orders
+2025-07-23T23:13:27.227+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:13:27.227+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:13:27.227+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:13:27.228+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:13:27.228+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:13:27.228+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:13:27.239+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:13:27.239+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:13:27.239+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:13:27.239+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:13:27.239+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:13:27.239+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:13:35.872+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart called for userId=5, cartItemId=16
+2025-07-23T23:13:35.887+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart completed for cartItemId=16
+2025-07-23T23:13:35.902+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:13:35.902+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:13:35.905+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:13:35.905+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:13:37.908+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:13:37.909+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:13:37.913+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=17
+2025-07-23T23:13:37.913+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=17
+2025-07-23T23:13:37.946+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:13:37.946+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:13:37.951+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:13:37.951+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:13:48.856+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:13:48.857+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:13:48.860+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:13:48.860+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:13:50.159+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:13:50.159+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:13:50.159+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:13:50.159+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:13:50.159+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:13:50.159+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:13:50.162+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:13:50.162+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:13:50.162+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:13:50.162+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:13:50.163+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:13:50.163+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:14:34.302+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory called for userId=5
+2025-07-23T23:14:34.302+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId called for userId=5
+2025-07-23T23:14:34.308+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId result: 6 orders
+2025-07-23T23:14:34.308+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory result: 6 orders
+2025-07-23T23:16:13.360+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:16:13.361+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:16:13.366+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:16:13.367+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:16:16.566+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:16:16.566+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:16:16.571+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:16:16.571+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:16:16.571+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:16:16.571+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:16:16.574+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:16:16.574+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:16:22.480+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:16:22.480+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:16:22.483+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:16:22.483+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:16:25.196+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:16:25.196+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:16:25.196+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:16:25.197+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:16:25.198+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:16:25.198+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:16:25.199+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:16:25.199+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:16:25.199+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:16:25.199+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:16:25.200+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:16:25.200+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:16:27.778+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart called for userId=5, cartItemId=17
+2025-07-23T23:16:27.782+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart completed for cartItemId=17
+2025-07-23T23:16:27.836+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:16:27.836+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:16:27.841+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:16:27.841+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:16:34.358+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:16:34.359+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:16:34.362+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 0 cart items for userId=5
+2025-07-23T23:16:34.362+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:19:52.954+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:19:52.955+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:19:52.961+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:19:52.961+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:19:54.837+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:19:54.837+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:19:54.841+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:19:54.841+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:19:54.843+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:19:54.843+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:19:54.847+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:19:54.847+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:23:59.957+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:23:59.958+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:23:59.962+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:23:59.962+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:24:02.188+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:24:02.189+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:24:02.197+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:24:02.197+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:24:02.201+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:24:02.202+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:24:02.205+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:24:02.206+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:25:07.998+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:25:07.998+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:25:07.999+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:25:07.999+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:25:08.005+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:25:08.005+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:25:08.005+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:25:08.005+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:28:41.327+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:28:41.328+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:28:41.332+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:28:41.332+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:28:44.561+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:28:44.561+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:28:44.565+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:28:44.565+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:28:44.568+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:28:44.568+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:28:44.570+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:28:44.571+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:31:49.389+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:31:49.389+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:31:49.395+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:31:49.395+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:32:11.816+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:32:11.816+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:32:11.820+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:32:11.820+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:32:11.823+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:32:11.823+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:32:11.825+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:32:11.825+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:32:27.297+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory called for userId=5
+2025-07-23T23:32:27.298+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId called for userId=5
+2025-07-23T23:32:27.303+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.serviceImpl.OrderServiceImpl   : [OrderServiceImpl] getOrdersByUserId result: 6 orders
+2025-07-23T23:32:27.303+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.OrderController     : [OrderController] getOrderHistory result: 6 orders
+2025-07-23T23:32:32.020+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.ProfileController   : [API REQUEST] GET /api/profile/5 - Fetching user profile
+2025-07-23T23:32:32.024+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.ProfileController   : [API RESPONSE] GET /api/profile/5 - User profile fetched successfully
+2025-07-23T23:34:15.205+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:34:15.205+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:34:15.207+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:34:15.207+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:34:15.210+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:34:15.211+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:34:15.211+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:34:15.211+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:34:15.211+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:34:15.211+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:34:15.214+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:34:15.214+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:34:20.072+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:34:20.072+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:34:20.076+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:34:20.076+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:34:38.748+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:34:38.748+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:34:38.748+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=2
+2025-07-23T23:34:38.748+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:34:38.748+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:34:38.748+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=2
+2025-07-23T23:34:38.753+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:34:38.753+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:34:38.753+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:34:38.753+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 0 items
+2025-07-23T23:34:38.754+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:34:38.754+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 0 items
+2025-07-23T23:34:40.424+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:34:40.424+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:34:40.425+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:34:40.424+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:34:40.425+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:34:40.425+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:34:40.428+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:34:40.428+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:34:40.428+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:34:40.428+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:34:40.428+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:34:40.428+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:34:41.131+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:34:41.132+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:34:41.139+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=18
+2025-07-23T23:34:41.139+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=18
+2025-07-23T23:34:41.160+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:34:41.160+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:34:41.163+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:34:41.163+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:36:21.208+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:36:21.209+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:36:21.219+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:36:21.220+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:36:24.780+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart called for userId=5, cartItemId=18
+2025-07-23T23:36:24.788+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart completed for cartItemId=18
+2025-07-23T23:36:24.805+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:36:24.805+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:36:24.807+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:36:24.807+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:36:26.894+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:36:26.894+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:36:26.899+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:36:26.899+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:36:26.900+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:36:26.900+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:36:26.900+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:36:26.902+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:36:26.903+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:36:26.903+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:36:26.904+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:36:26.904+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:36:27.547+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:36:27.547+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:36:27.559+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=19
+2025-07-23T23:36:27.559+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=19
+2025-07-23T23:36:27.577+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:36:27.577+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:36:27.579+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:36:27.579+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:37:15.298+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:37:15.299+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:37:15.304+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:37:15.305+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:37:17.238+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:37:17.238+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:37:17.242+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:37:17.242+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:37:17.249+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:37:17.249+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:37:17.249+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:37:17.249+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:37:17.254+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:37:17.254+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:37:17.254+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:37:17.255+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:37:18.685+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:37:18.685+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:37:18.685+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:37:18.685+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:37:18.688+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:37:18.688+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:37:18.688+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:37:18.688+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:37:21.593+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:37:21.594+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:37:21.602+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 1 cart items for userId=5
+2025-07-23T23:37:21.602+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:37:24.045+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart called for userId=5, cartItemId=19
+2025-07-23T23:37:24.047+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart completed for cartItemId=19
+2025-07-23T23:37:24.065+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:37:24.065+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:37:24.068+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:37:24.068+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:37:24.951+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:37:24.951+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:37:24.964+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=20
+2025-07-23T23:37:24.964+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=20
+2025-07-23T23:37:24.984+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:37:24.984+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:37:24.986+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:37:24.987+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:37:31.709+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart called for userId=5, cartItemId=20
+2025-07-23T23:37:31.724+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart completed for cartItemId=20
+2025-07-23T23:37:31.736+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:37:31.736+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:37:31.740+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:37:31.741+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:37:33.290+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=2, quantity=1
+2025-07-23T23:37:33.291+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=2, quantity=1
+2025-07-23T23:37:33.296+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=21
+2025-07-23T23:37:33.296+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=21
+2025-07-23T23:37:33.313+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:37:33.313+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:37:33.315+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:37:33.315+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:38:39.628+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:38:39.628+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:38:39.629+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:38:39.629+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:38:39.631+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:38:39.631+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:38:39.631+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:38:39.631+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:38:39.635+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:38:39.635+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:38:39.637+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:38:39.637+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:39:27.165+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:39:27.165+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:39:27.168+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:39:27.168+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:39:48.157+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:39:48.157+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:39:48.158+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:39:48.158+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:39:48.165+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:39:48.166+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:39:48.166+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:39:48.166+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:39:48.337+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:39:48.338+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:39:48.341+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:39:48.341+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:39:49.604+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:39:49.605+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:39:49.614+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:39:49.615+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:39:51.949+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:39:51.949+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:39:51.954+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 1 cart items for userId=5
+2025-07-23T23:39:51.954+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:39:54.706+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:39:54.707+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:39:54.716+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:39:54.716+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:39:56.384+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:39:56.385+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:39:56.397+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=22
+2025-07-23T23:39:56.398+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=22
+2025-07-23T23:39:56.416+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:39:56.417+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:39:56.420+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:39:56.420+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:39:57.568+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem called for userId=5, cartItemId=22, newQuantity=2
+2025-07-23T23:39:57.569+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Updating cart item: userId=5, cartItemId=22, newQuantity=2
+2025-07-23T23:39:57.587+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Cart item updated: cartItemId=22, newQuantity=2
+2025-07-23T23:39:57.587+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem result: success
+2025-07-23T23:39:57.641+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:39:57.641+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:39:57.644+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:39:57.644+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:39:58.958+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:39:58.958+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:39:58.960+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:39:58.960+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:40:01.348+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:40:01.349+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:40:01.363+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 1 cart items for userId=5
+2025-07-23T23:40:01.364+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:40:59.841+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:40:59.841+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:40:59.844+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:40:59.845+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:40:59.856+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:40:59.856+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:40:59.857+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:40:59.857+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:40:59.858+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:40:59.858+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:40:59.863+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:40:59.863+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:40:59.863+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:40:59.863+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:40:59.864+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:40:59.865+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:40:59.866+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:40:59.867+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:40:59.870+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:40:59.870+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:41:40.660+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:41:40.660+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:41:40.660+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:41:40.660+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:41:40.660+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:41:40.660+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:41:40.660+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:41:40.660+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:41:40.663+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:41:40.663+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:41:40.663+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:41:40.663+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:41:40.663+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:41:40.663+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:41:40.664+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:41:40.664+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:41:40.674+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:41:40.674+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:41:40.678+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:41:40.678+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:41:54.344+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:41:54.344+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:41:54.348+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=23
+2025-07-23T23:41:54.349+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=23
+2025-07-23T23:41:54.511+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:41:54.511+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:41:54.513+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:41:54.513+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:41:55.599+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:41:55.599+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:41:55.610+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:41:55.610+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:41:57.858+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:41:57.859+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:41:57.875+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 1 cart items for userId=5
+2025-07-23T23:41:57.875+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:42:06.385+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart called for userId=5, cartItemId=23
+2025-07-23T23:42:06.387+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart completed for cartItemId=23
+2025-07-23T23:42:06.400+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:42:06.400+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:42:06.403+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:42:06.403+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:42:07.326+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=2, quantity=1
+2025-07-23T23:42:07.327+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=2, quantity=1
+2025-07-23T23:42:07.331+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=24
+2025-07-23T23:42:07.332+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=24
+2025-07-23T23:42:07.349+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:42:07.349+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:42:07.353+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:42:07.353+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:42:07.723+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:42:07.723+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:42:07.728+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:42:07.728+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:42:09.527+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem called for userId=5, cartItemId=24, newQuantity=2
+2025-07-23T23:42:09.527+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Updating cart item: userId=5, cartItemId=24, newQuantity=2
+2025-07-23T23:42:09.531+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Cart item updated: cartItemId=24, newQuantity=2
+2025-07-23T23:42:09.532+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem result: success
+2025-07-23T23:42:09.549+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:42:09.550+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:42:09.553+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:42:09.554+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:42:09.845+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem called for userId=5, cartItemId=24, newQuantity=3
+2025-07-23T23:42:09.845+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Updating cart item: userId=5, cartItemId=24, newQuantity=3
+2025-07-23T23:42:09.854+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Cart item updated: cartItemId=24, newQuantity=3
+2025-07-23T23:42:09.854+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem result: success
+2025-07-23T23:42:09.871+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:42:09.871+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:42:09.874+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:42:09.875+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:42:10.423+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem called for userId=5, cartItemId=24, newQuantity=4
+2025-07-23T23:42:10.423+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Updating cart item: userId=5, cartItemId=24, newQuantity=4
+2025-07-23T23:42:10.439+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Cart item updated: cartItemId=24, newQuantity=4
+2025-07-23T23:42:10.440+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem result: success
+2025-07-23T23:42:10.458+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:42:10.458+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:42:10.460+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:42:10.460+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:42:10.879+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem called for userId=5, cartItemId=24, newQuantity=5
+2025-07-23T23:42:10.880+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Updating cart item: userId=5, cartItemId=24, newQuantity=5
+2025-07-23T23:42:10.888+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.CartItemServiceImpl          : Cart item updated: cartItemId=24, newQuantity=5
+2025-07-23T23:42:10.888+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem result: success
+2025-07-23T23:42:10.906+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:42:10.906+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:42:10.908+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:42:10.909+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:42:11.224+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem called for userId=5, cartItemId=24, newQuantity=6
+2025-07-23T23:42:11.224+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Updating cart item: userId=5, cartItemId=24, newQuantity=6
+2025-07-23T23:42:11.227+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Cart item updated: cartItemId=24, newQuantity=6
+2025-07-23T23:42:11.227+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] updateCartItem result: success
+2025-07-23T23:42:11.249+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:42:11.250+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:42:11.252+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:42:11.253+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:42:14.830+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:42:14.831+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:42:14.846+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 1 cart items for userId=5
+2025-07-23T23:42:14.846+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:43:10.333+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors called
+2025-07-23T23:43:10.333+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors called
+2025-07-23T23:43:10.336+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.serviceImpl.VendorServiceImpl  : [VendorServiceImpl] getAllVendors result: 2 vendors
+2025-07-23T23:43:10.336+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.c.p.c.RestaurantDetailScreenController : [RestaurantDetailScreenController] getAllVendors result: 2 vendors
+2025-07-23T23:43:13.261+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:43:13.261+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:43:13.263+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:43:13.263+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-6] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:43:13.266+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant called for restaurantId=1
+2025-07-23T23:43:13.266+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:43:13.266+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor called for vendorId=1
+2025-07-23T23:43:13.266+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:43:13.268+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:43:13.268+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-1] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:43:13.269+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.s.MenuItemServiceImpl          : [MenuItemServiceImpl] getMenuByVendor result: 2 items
+2025-07-23T23:43:13.269+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-3] c.e.c.c.p.c.MenuScreenController         : [MenuScreenController] getMenuByRestaurant result: 2 items
+2025-07-23T23:43:16.238+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:43:16.238+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:43:16.240+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:43:16.240+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-10] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:43:17.891+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart called with userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:43:17.891+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Adding item to cart: userId=5, vendorId=1, menuId=1, quantity=1
+2025-07-23T23:43:17.895+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.s.CartItemServiceImpl          : Cart item added with cartItemId=25
+2025-07-23T23:43:17.895+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-9] c.e.c.c.p.controller.CartItemController  : [CartItemController] addToCart result: cartItemId=25
+2025-07-23T23:43:17.915+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:43:17.915+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:43:17.918+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:43:17.918+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-2] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:43:19.204+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:43:19.204+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:43:19.206+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 1 cart items for userId=5
+2025-07-23T23:43:19.206+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-8] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 1 items
+2025-07-23T23:43:23.397+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart called for userId=5
+2025-07-23T23:43:23.397+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Clearing cart for userId=5
+2025-07-23T23:43:23.401+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.s.CartItemServiceImpl          : Cleared 1 cart items for userId=5
+2025-07-23T23:43:23.401+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-4] c.e.c.c.p.controller.CartItemController  : [CartItemController] clearCart completed for userId=5
+2025-07-23T23:43:29.259+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart called for userId=5, cartItemId=25
+2025-07-23T23:43:29.261+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-7] c.e.c.c.p.controller.CartItemController  : [CartItemController] removeFromCart completed for cartItemId=25
+2025-07-23T23:43:29.275+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart called for userId=5
+2025-07-23T23:43:29.275+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetching cart for userId=5
+2025-07-23T23:43:29.277+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.s.CartItemServiceImpl          : Fetched 0 cart items for userId=5
+2025-07-23T23:43:29.277+05:30  INFO 19480 --- [Crave_Clock_Portal] [http-nio-8082-exec-5] c.e.c.c.p.controller.CartItemController  : [CartItemController] getCart result: 0 items
+2025-07-23T23:48:42.202+05:30  INFO 19480 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-23T23:48:43.055+05:30  INFO 19480 --- [Crave_Clock_Portal] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-23T23:48:43.096+05:30  INFO 19480 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23T23:48:43.122+05:30  INFO 19480 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23T23:48:43.151+05:30  INFO 19480 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
