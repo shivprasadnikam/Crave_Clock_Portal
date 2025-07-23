@@ -6,9 +6,9 @@ import lombok.Data;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "CC_USER_DETAILS")
+@Table(name = "CC_ONBOARDED_USERS")
 @Data
-public class RcUserDetailsEntity {
+public class OnboardedUserEntity {
     @Id
     @Column(name = "USER_ID")
     private String userId;
@@ -24,7 +24,13 @@ public class RcUserDetailsEntity {
     @Column(name = "CREATED_DATE")
     private Timestamp createdDate;
 
-
-
+    @Column(name = "FULL_NAME")
+    private String fullName;
+    @Column(name = "PHONE_NUMBER")
+    private String phoneNumber;
+    @Column(name = "EMAIL")
+    private String email;
+    @Column(name = "ADDRESS")
+    private String address;
 
 }

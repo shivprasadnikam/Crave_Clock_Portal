@@ -1,6 +1,6 @@
 package com.example.crave.clock.portal.repository;
 
-import com.example.crave.clock.portal.entity.RcUserDetailsEntity;
+import com.example.crave.clock.portal.entity.OnboardedUserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -9,17 +9,16 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface RcUserDetailsRepository extends JpaRepository<RcUserDetailsEntity,Long> {
+public interface RcUserDetailsRepository extends JpaRepository<OnboardedUserEntity, Long> {
     @Query(value = "SELECT CC_USER_ID_SEQ.NEXTVAL FROM DUAL", nativeQuery = true)
     String getUserIdSeq();
+
     @Query(value = "SELECT CC_USER_ID_SEQ.NEXTVAL FROM DUAL", nativeQuery = true)
     String getCartItemId();
 
-    Optional<RcUserDetailsEntity> findByUsername(String userName);
+    Optional<OnboardedUserEntity> findByUsername(String userName);
 
-    @Query(value = "SELECT USER_ID FROM CC_USER_DETAILS WHERE USERNAME =:userName", nativeQuery = true)
+    @Query(value = "SELECT USER_ID FROM CC_ONBOARDED_USERS WHERE USERNAME =:userName", nativeQuery = true)
     String getUserIdByUserName(@Param("userName") String userName);
-
-
 
 }

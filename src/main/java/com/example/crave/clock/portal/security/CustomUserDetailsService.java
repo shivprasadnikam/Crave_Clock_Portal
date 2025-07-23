@@ -1,7 +1,6 @@
 package com.example.crave.clock.portal.security;
 
-
-import com.example.crave.clock.portal.entity.RcUserDetailsEntity;
+import com.example.crave.clock.portal.entity.OnboardedUserEntity;
 import com.example.crave.clock.portal.repository.RcUserDetailsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -20,7 +19,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        RcUserDetailsEntity user = rcUserDetailsRepository.findByUsername(username)
+        OnboardedUserEntity user = rcUserDetailsRepository.findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
 
         return new org.springframework.security.core.userdetails.User(
@@ -30,4 +29,3 @@ public class CustomUserDetailsService implements UserDetailsService {
         );
     }
 }
-

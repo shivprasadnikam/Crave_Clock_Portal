@@ -1,12 +1,14 @@
 package com.example.crave.clock.portal.serviceImpl;
 
-import com.example.crave.clock.portal.entity.RcUserDetailsEntity;
+import com.example.crave.clock.portal.entity.OnboardedUserEntity;
 import com.example.crave.clock.portal.filters.JwtAuthFilter;
 import com.example.crave.clock.portal.repository.RcUserDetailsRepository;
 import com.example.crave.clock.portal.request.LoginRequest;
+import com.example.crave.clock.portal.request.UserRegistrationRequest;
 import com.example.crave.clock.portal.response.LoginResponse;
 import com.example.crave.clock.portal.service.LoginService;
 import com.example.crave.clock.portal.util.JwtUtil;
+import com.example.crave.clock.portal.dto.UserProfileDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,29 +30,34 @@ public class LoginServiceImpl implements LoginService {
     private JwtUtil jwtUtil;
 
     @Override
-    public ResponseEntity<LoginResponse> onBoardUser(LoginRequest loginRequest) {
-        log.info("[LoginServiceImpl] onBoardUser called for email={}", loginRequest.getEmail());
+    public ResponseEntity<LoginResponse> onBoardUser(UserRegistrationRequest registrationRequest) {
+        log.info("[LoginServiceImpl] onBoardUser called for email={}", registrationRequest.getEmail());
         LoginResponse loginResponse = new LoginResponse();
         try {
-            Optional<RcUserDetailsEntity> userExists = rcUserDetailsRepository.findByUsername(loginRequest.getEmail());
+            Optional<OnboardedUserEntity> userExists = rcUserDetailsRepository
+                    .findByUsername(registrationRequest.getEmail());
 
             if (userExists.isPresent()) {
                 log.warn("[LoginServiceImpl] onBoardUser failed: username already taken for email={}",
-                        loginRequest.getEmail());
+                        registrationRequest.getEmail());
                 loginResponse.setStatus(false);
                 loginResponse.setErrorMessage("Username already taken");
                 return ResponseEntity.status(HttpStatus.CONFLICT)
                         .body(loginResponse);
             }
-            RcUserDetailsEntity rcUserDetailsEntity = new RcUserDetailsEntity();
+            OnboardedUserEntity onboardedUserEntity = new OnboardedUserEntity();
             String userId = rcUserDetailsRepository.getUserIdSeq();
             log.info("[LoginServiceImpl] onBoardUser new userId={}", userId);
-            rcUserDetailsEntity.setUsername(loginRequest.getEmail());
-            rcUserDetailsEntity.setPassword(jwtAuthFilter.passwordEncoder().encode(loginRequest.getPassword()));
-            rcUserDetailsEntity.setUserId(userId);
+            onboardedUserEntity.setUsername(registrationRequest.getEmail());
+            onboardedUserEntity.setPassword(jwtAuthFilter.passwordEncoder().encode(registrationRequest.getPassword()));
+            onboardedUserEntity.setUserId(userId);
+            onboardedUserEntity.setFullName(registrationRequest.getFullName());
+            onboardedUserEntity.setPhoneNumber(registrationRequest.getPhoneNumber());
+            onboardedUserEntity.setEmail(registrationRequest.getEmail());
+            onboardedUserEntity.setAddress(registrationRequest.getAddress());
 
-            rcUserDetailsRepository.save(rcUserDetailsEntity);
-            log.info("[LoginServiceImpl] onBoardUser user saved for email={}", loginRequest.getEmail());
+            rcUserDetailsRepository.save(onboardedUserEntity);
+            log.info("[LoginServiceImpl] onBoardUser user saved for email={}", registrationRequest.getEmail());
         } catch (Exception e) {
             log.error("[LoginServiceImpl] onBoardUser error: {}", e.getMessage(), e);
             loginResponse.setStatus(false);
@@ -59,7 +66,7 @@ public class LoginServiceImpl implements LoginService {
         }
         loginResponse.setStatus(true);
         loginResponse.setErrorMessage("User Onboarded Successfully");
-        log.info("[LoginServiceImpl] onBoardUser success for email={}", loginRequest.getEmail());
+        log.info("[LoginServiceImpl] onBoardUser success for email={}", registrationRequest.getEmail());
         return ResponseEntity.status(HttpStatus.OK).body(loginResponse);
     }
 
@@ -70,7 +77,7 @@ public class LoginServiceImpl implements LoginService {
         String authToken;
 
         try {
-            Optional<RcUserDetailsEntity> userExists = rcUserDetailsRepository.findByUsername(loginRequest.getEmail());
+            Optional<OnboardedUserEntity> userExists = rcUserDetailsRepository.findByUsername(loginRequest.getEmail());
             if (userExists.isEmpty()) {
                 log.warn("[LoginServiceImpl] login failed: user not found for email={}", loginRequest.getEmail());
                 loginResponse.setStatus(false);
