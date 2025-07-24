@@ -33,4 +33,6 @@ public class OnboardedUserEntity {
     @Column(name = "ADDRESS")
     private String address;
 
+    @Column(name = "EXPO_PUSH_TOKEN")
+    private String expoPushToken;
 }
