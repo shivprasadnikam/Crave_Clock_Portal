@@ -857,3 +857,33 @@ Caused by: java.lang.RuntimeException: Driver org.postgresql.Driver claims to no
 2025-07-25T21:40:39.862+05:30  INFO 3976 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-07-25T21:40:39.866+05:30  INFO 3976 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-07-25T21:40:42.264+05:30  INFO 3976 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-25T21:48:33.980+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] e.c.c.p.CraveClockPortalApplicationTests : Starting CraveClockPortalApplicationTests using Java 17.0.10 with PID 9132 (started by shiv in C:\Projects\Crave_Clock_Portal)
+2025-07-25T21:48:33.982+05:30 DEBUG 9132 --- [Crave_Clock_Portal] [main] e.c.c.p.CraveClockPortalApplicationTests : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-25T21:48:33.984+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] e.c.c.p.CraveClockPortalApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-07-25T21:48:35.200+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-25T21:48:35.366+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 8 JPA repository interfaces.
+2025-07-25T21:48:36.192+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-25T21:48:36.296+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-25T21:48:36.375+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-25T21:48:37.147+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-25T21:48:37.216+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-25T21:48:41.342+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b841713
+2025-07-25T21:48:41.344+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-25T21:48:41.649+05:30  WARN 9132 --- [Crave_Clock_Portal] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-25T21:48:42.200+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-25T21:48:43.578+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-25T21:48:44.688+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T21:48:45.261+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-25T21:48:45.532+05:30  WARN 9132 --- [Crave_Clock_Portal] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-25T21:48:45.922+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-07-25T21:48:46.530+05:30  INFO 9132 --- [Crave_Clock_Portal] [main] e.c.c.p.CraveClockPortalApplicationTests : Started CraveClockPortalApplicationTests in 13.139 seconds (process running for 14.737)
+2025-07-25T21:48:47.162+05:30  INFO 9132 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T21:48:47.165+05:30  INFO 9132 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-25T21:48:49.302+05:30  INFO 9132 --- [Crave_Clock_Portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
