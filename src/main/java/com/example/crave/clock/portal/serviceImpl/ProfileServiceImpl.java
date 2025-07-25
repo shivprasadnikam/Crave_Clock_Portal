@@ -44,4 +44,14 @@ public class ProfileServiceImpl implements ProfileService {
         updated.setAddress(user.getAddress());
         return updated;
     }
+
+    @Override
+    public boolean updateExpoPushToken(String userId, String expoPushToken) {
+        OnboardedUserEntity user = rcUserDetailsRepository.findById(Long.valueOf(userId)).orElse(null);
+        if (user == null)
+            return false;
+        user.setExpoPushToken(expoPushToken);
+        rcUserDetailsRepository.save(user);
+        return true;
+    }
 }

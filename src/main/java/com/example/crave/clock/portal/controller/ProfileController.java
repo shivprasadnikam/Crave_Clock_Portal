@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import java.util.Map;
 
 @RequiredArgsConstructor
 @RestController
@@ -38,5 +39,18 @@ public class ProfileController {
         }
         log.info("[API RESPONSE] PUT /api/profile/{} - User profile updated successfully", userId);
         return ResponseEntity.ok(updated);
+    }
+
+    @PutMapping("/{userId}/push-token")
+    public ResponseEntity<Void> updatePushToken(@PathVariable String userId, @RequestBody Map<String, String> body) {
+        String expoPushToken = body.get("expoPushToken");
+        if (expoPushToken == null || expoPushToken.isEmpty()) {
+            return ResponseEntity.badRequest().build();
+        }
+        boolean updated = profileService.updateExpoPushToken(userId, expoPushToken);
+        if (!updated) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok().build();
     }
 }

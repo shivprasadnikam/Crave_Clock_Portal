@@ -6,4 +6,6 @@ public interface ProfileService {
     UserProfileDTO getUserProfileById(String userId);
 
     UserProfileDTO updateUserProfile(String userId, UserProfileDTO profileDTO);
+
+    boolean updateExpoPushToken(String userId, String expoPushToken);
 }
