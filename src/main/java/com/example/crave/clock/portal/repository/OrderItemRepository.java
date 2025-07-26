@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public interface OrderItemRepository extends JpaRepository<OrderItemEntity, Long> {
-    @Query(value = "SELECT ORDER_ITEM_ID_SEQ.NEXTVAL FROM DUAL", nativeQuery = true)
+    @Query(value = "SELECT nextval('order_item_id_seq')", nativeQuery = true)
     Long getOrderItemId();
 }
 

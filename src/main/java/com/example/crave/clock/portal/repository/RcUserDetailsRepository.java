@@ -10,11 +10,8 @@ import java.util.Optional;
 
 @Repository
 public interface RcUserDetailsRepository extends JpaRepository<OnboardedUserEntity, Long> {
-    @Query(value = "SELECT CC_USER_ID_SEQ.NEXTVAL FROM DUAL", nativeQuery = true)
+    @Query(value = "SELECT nextval('cc_user_id_seq')", nativeQuery = true)
     String getUserIdSeq();
-
-    @Query(value = "SELECT CC_USER_ID_SEQ.NEXTVAL FROM DUAL", nativeQuery = true)
-    String getCartItemId();
 
     Optional<OnboardedUserEntity> findByUsername(String userName);
 
